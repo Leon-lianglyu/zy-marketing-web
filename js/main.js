@@ -13,7 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.lang-toggle').textContent = 'EN';
   document.body.classList.add('zh');
   document.documentElement.lang = 'zh';
+
+  // Close mobile menu when a nav link is clicked
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 });
+
+function toggleMenu() {
+  const links = document.getElementById('nav-links');
+  const btn = document.getElementById('nav-hamburger');
+  links.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+
+function closeMenu() {
+  document.getElementById('nav-links').classList.remove('open');
+  document.getElementById('nav-hamburger').classList.remove('open');
+}
 
 function applyLang(lang) {
   const t = translations[lang];
