@@ -53,7 +53,6 @@ const translations = {
     'contact.label': 'GET IN TOUCH',
     'contact.title': 'Ready to Grow?',
     'contact.sub': 'Tell us about your business and your goals. We\'ll come back to you within 24 hours.',
-    'contact.wechat': 'Contact via WeChat',
     'contact.email': 'contact@zy-marketing.com',
   },
   zh: {
@@ -110,7 +109,6 @@ const translations = {
     'contact.label': '联系我们',
     'contact.title': '准备好增长了吗？',
     'contact.sub': '告诉我们你的业务和目标，我们将在24小时内回复你。',
-    'contact.wechat': '微信联系我们',
     'contact.email': 'contact@zy-marketing.com',
   }
 };
