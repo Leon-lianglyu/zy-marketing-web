@@ -7,6 +7,14 @@ function toggleLang() {
   document.documentElement.lang = window.currentLang;
 }
 
+// Apply default language on load
+applyLang(window.currentLang);
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.lang-toggle').textContent = 'EN';
+  document.body.classList.add('zh');
+  document.documentElement.lang = 'zh';
+});
+
 function applyLang(lang) {
   const t = translations[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {

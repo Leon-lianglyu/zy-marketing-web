@@ -1,3 +1,7 @@
 .superpowers/
 flyer.html
 zy-marketing-flyer.pdf
+generate-pdf.js
+node_modules/
+package.json
+package-lock.json

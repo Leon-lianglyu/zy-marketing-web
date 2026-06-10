@@ -115,4 +115,4 @@ const translations = {
   }
 };
 
-window.currentLang = 'en';
+window.currentLang = 'zh';
